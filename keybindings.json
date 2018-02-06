@@ -1,0 +1,803 @@
+// Place your key bindings in this file to overwrite the defaults
+[   
+    // --------------------------------------------------------------
+    // Begin General Keybinds.
+    // --------------------------------------------------------------
+
+    // open command palette.
+    {
+        "key": "alt+x",
+        "command": "workbench.action.showCommands"
+    },
+
+    // quick open.
+    {
+        "key": "ctrl+r",
+        "command": "workbench.action.quickOpen"
+    },
+
+    // quick open recent.
+    {
+        "key": "ctrl+shift+r",
+        "command": "workbench.action.openRecent"
+    },
+
+    // --------------------------------------------------------------
+    // End General Keybinds.
+    // --------------------------------------------------------------
+
+    // --------------------------------------------------------------
+    // Begin Basic Editing Keybinds.
+    // --------------------------------------------------------------
+
+    // cut.
+    {
+        "key": "ctrl+x",
+        "command": "editor.action.clipboardCutAction",
+        "when": "editorTextFocus && editorHasSelection && !editorReadOnly"
+    },
+
+    // cursor up in editor.
+    {
+        "key": "alt+i",
+        "command": "cursorUp",
+        "when": "editorTextFocus"
+    },
+
+    // cursor select up in editor.
+    {
+        "key": "alt+shift+i",
+        "command": "cursorUpSelect",
+        "when": "editorTextFocus"
+    },
+
+    // cursor down in editor.
+    {
+        "key": "alt+k",
+        "command": "cursorDown",
+        "when": "editorTextFocus"
+    },
+
+    // cursor select down in editor.
+    {
+        "key": "alt+shift+k",
+        "command": "cursorDownSelect",
+        "when": "editorTextFocus"
+    },
+
+    // cursor left in editor.    
+    {
+        "key": "alt+j",
+        "command": "cursorLeft",
+        "when": "editorTextFocus"
+    },
+
+    // curosr select left in editor.
+    {
+        "key": "alt+shift+j",
+        "command": "cursorLeftSelect",
+        "when": "editorTextFocus"
+    },
+
+    // cursor right in editor.
+    {
+        "key": "alt+l",
+        "command": "cursorRight",
+        "when": "editorTextFocus"
+    },
+
+    // cursor select right in editor.
+    {
+        "key": "alt+shift+l",
+        "command": "cursorRightSelect",
+        "when": "editorTextFocus"
+    },
+
+    // cursor goto beginning of line (whitespace exclusive) in editor.
+    {
+        "key": "alt+u",
+        "command": "cursorHome",
+        "when": "editorTextFocus"
+    },
+
+    // cursor goto beginning of line select (whitespace exclusive) in editor.
+    {
+        "key": "alt+shift+u",
+        "command": "cursorHomeSelect",
+        "when": "editorTextFocus"
+    },
+
+    // cursor goto end of line (whitespace inclusive) in editor.
+    {
+        "key": "alt+o",
+        "command": "cursorEnd",
+        "when": "editorTextFocus"
+    },
+
+    // cursor goto end of line select (whitespace inclusive) in editor.
+    {
+        "key": "alt+shift+o",
+        "command": "cursorEndSelect",
+        "when": "editorTextFocus"
+    },
+
+    // cursor jump up one block in editor.
+    {
+        "key": "ctrl+i",
+        "command": "spaceBlockJumper.moveUp",
+        "when": "editorTextFocus"
+    },
+
+    // cursor jump up one block select in editor.
+    {
+        "key": "ctrl+shift+i",
+        "command": "spaceBlockJumper.selectUp",
+        "when": "editorTextFocus"
+    },
+
+    // cursor jump down one block in editor.
+    {
+        "key": "ctrl+k",
+        "command": "spaceBlockJumper.moveDown",
+        "when": "editorTextFocus"
+    },
+
+    // cursor jump down one block select in editor.
+    {
+        "key": "ctrl+shift+k",
+        "command": "spaceBlockJumper.selectDown",
+        "when": "editorTextFocus"
+    },
+
+    // cursor up one page in editor.
+    {
+        "key": "ctrl+j",
+        "command": "cursorPageUp",
+        "when": "editorTextFocus"
+    },
+ 
+    // cursor up one page select in editor.
+    {
+        "key": "ctrl+shift+j",
+        "command": "cursorPageUpSelect",
+        "when": "editorTextFocus"
+    },
+
+    // cursor down one page in editor.
+    {
+        "key": "ctrl+l",
+        "command": "cursorPageDown",
+        "when": "editorTextFocus"
+    },
+
+    // cursor down on page select in editor.
+    {
+        "key": "ctrl+shift+l",
+        "command": "cursorPageDownSelect",
+        "when": "editorTextFocus"
+    },
+
+    // cursor goto top in editor.
+    {
+        "key": "ctrl+u",
+        "command": "cursorTop",
+        "when": "editorTextFocus"
+    },
+
+    // cursor goto top select in editor.
+    {
+        "key": "ctrl+shift+u",
+        "command": "cursorTopSelect",
+        "when": "editorTextFocus"
+    },
+
+    // cursor goto bottom in editor.
+    {
+        "key": "ctrl+o",
+        "command": "cursorBottom",
+        "when": "editorTextFocus"
+    },
+
+    // cursor goto bottom select in editor.
+    {
+        "key": "ctrl+shift+o",
+        "command": "cursorBottomSelect",
+        "when": "editorTextFocus"
+    },
+
+    // center cursor in editor.
+    {
+        "key": "alt+;",
+        "command": "center-editor-window.center",
+        "when": "editorTextFocus"
+    },
+
+    // --------------------------------------------------------------
+    // End Basic Editing Keybinds.
+    // --------------------------------------------------------------
+
+    // --------------------------------------------------------------
+    // Begin Navigation Keybinds.
+    // --------------------------------------------------------------
+
+    // open problems panel.
+    {
+        "key": "f2",
+        "command":"workbench.actions.view.problems"
+    },
+
+    // goto next problem.
+    {
+        "key": "f3",
+        "command": "editor.action.marker.next"
+    },
+
+    // goto previous problem.
+    {
+        "key": "shift+f3",
+        "command": "editor.action.marker.prev"
+    },
+
+    // --------------------------------------------------------------
+    // End Navigation Keybinds.
+    // --------------------------------------------------------------
+
+    // --------------------------------------------------------------
+    // Begin Search and Replace Keybinds.
+    // --------------------------------------------------------------
+
+    // select previous match.
+    {
+        "key": "ctrl+j",
+        "command": "editor.action.previousMatchFindAction",
+        "when": "editorFocus && findWidgetVisible"
+    },
+
+    // select next match.
+    {
+        "key": "ctrl+l",
+        "command": "editor.action.nextMatchFindAction",
+        "when": "editorFocus && findWidgetVisible"
+    },
+
+    // open find and replace.
+    {
+        "key": "ctrl+shift+f",
+        "command": "editor.action.startFindReplaceAction",
+        "when": "editorFocus"
+    },
+
+    // replace current selection.
+    {
+        "key": "ctrl+enter",
+        "command": "editor.action.replaceOne",
+        "when": "editorFocus && findWidgetVisible"
+    },
+
+    // replace all.
+    {
+        "key": "ctrl+shift+enter",
+        "command": "editor.action.replaceAll",
+        "when": "editorFocus && findWidgetVisible"
+    },
+
+    // toggle case-sensitive.
+    {
+        "key": "alt+q",
+        "command": "toggleFindCaseSensitive",
+        "when": "editorFocus"
+    },
+
+
+    // toggle whole word.
+    {
+        "key": "alt+w",
+        "command": "toggleFindWholeWord",
+        "when": "editorFocus"
+    },
+
+
+    // toggle regex (change to alt+e when fixed).
+    {
+        "key": "alt+r",
+        "command": "toggleFindRegex",
+        "when": "editorFocus"
+    },
+
+    // --------------------------------------------------------------
+    // End Search and Replace Keybinds.
+    // --------------------------------------------------------------
+
+    // --------------------------------------------------------------
+    // Begin Selection Keybinds.
+    // --------------------------------------------------------------
+
+    // select previous in command palette.
+    {
+        "key": "ctrl+i",
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "when": "!editorTextFocus"
+    },
+
+    // select next in command palette.
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "!editorTextFocus"
+    },
+
+    // select previous in widget suggestion box.
+    {
+        "key": "ctrl+i",
+        "command": "selectPrevSuggestion",
+        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    },
+
+    // select next in widget selection box.
+    {
+        "key": "ctrl+k",
+        "command": "selectNextSuggestion",
+        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    },
+
+    // select previous in quick fix box.
+    {
+        "key": "ctrl+i",
+        "command": "selectPrevQuickFix",
+        "when": "editorFocus && quickFixWidgetVisible"
+    },
+
+    // select next in quick fix box.
+    {
+        "key": "ctrl+k",
+        "command": "selectNextQuickFix",
+        "when": "editorFocus && quickFixWidgetVisible"
+    },
+
+    // select current line.
+    {
+        "key": "ctrl+x ctrl+x",
+        "command": "expandLineSelection",
+        "when": "editorTextFocus && !editorHasSelection"
+    },
+
+    // reverse word delete.
+    {
+        "key": "ctrl+shift+backspace",
+        "command": "deleteWordRight",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+
+    // reverse delete.
+    {
+        "key": "shift+backspace",
+        "command": "deleteRight",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+
+    // delete the current line.
+    {
+        "key": "ctrl+shift+x",
+        "command": "editor.action.deleteLines",
+        "when": "editorTextFocus && !editorReadonly" 
+    },
+    
+    // move selection up.
+    {
+        "key": "ctrl+up",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    
+    // move selection down.
+    {
+        "key": "ctrl+down",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    
+    // insert line below.
+    {
+        "key": "ctrl+enter",
+        "command": "editor.action.insertLineBefore",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    
+    // toggle block comment.
+    {
+        "key": "ctrl+shift+/",
+        "command": "editor.action.blockComment",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+
+    // expand selection.
+    {
+        "key": "ctrl+;",
+        "command": "editor.action.smartSelect.grow",
+        "when": "editorFocus && !editorHasSelection"
+    },
+
+    // shrink selection.
+    {
+        "key": "ctrl+shift+;",
+        "command": "editor.action.smartSelect.shrink",
+        "when": "editorFocus && !editorHasSelection"
+    },
+
+    // --------------------------------------------------------------
+    // End Selection Keybinds.
+    // --------------------------------------------------------------
+
+    // --------------------------------------------------------------
+    // Begin Rich Languages Keybinds.
+    // --------------------------------------------------------------
+
+    // peak declaration.
+    {
+        "key": "ctrl+h",
+        "command": "editor.action.previewDeclaration",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+    },
+
+    // goto declaration.
+    {
+        "key": "ctrl+shift+h",
+        "command": "editor.action.goToDeclaration",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+
+    // open declaration on the side.
+    {
+        "key": "ctrl+x h",
+        "command": "editor.action.openDeclarationToTheSide",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor && !editorHasSelection"
+    },
+
+    // --------------------------------------------------------------
+    // End Rich Languages Keybinds.
+    // --------------------------------------------------------------
+
+    // --------------------------------------------------------------
+    // Begin Editor Management Keybinds.
+    // --------------------------------------------------------------
+
+    // split editor.
+    {
+        "key": "ctrl+x 1",
+        "command": "workbench.action.splitEditor",
+        "when": "!editorHasSelection"
+    },
+    
+    // --------------------------------------------------------------
+    // End Editor Management Keybinds.
+    // --------------------------------------------------------------
+
+    // --------------------------------------------------------------
+    // Begin File Mangement Keybinds.
+    // --------------------------------------------------------------
+
+    // open file.
+    {
+        "key": "ctrl+e",
+        "command": "workbench.action.files.openFile"
+    },
+
+    // open folder.
+    {
+        "key": "ctrl+x e",
+        "command": "workbench.action.files.openFolder",
+        "when": "!editorHasSelection"
+    },
+
+    // close all editors.
+    {
+        "key": "ctrl+shift+w",
+        "command": "workbench.action.closeAllEditors"
+    },
+
+    // close folder.
+    {
+        "key": "ctrl+x w",
+        "command": "workbench.action.closeFolder",
+        "when": "!editorHasSelection"
+    },
+
+    // copy path of active file.
+    {
+        "key": "ctrl+x ctrl+c",
+        "command": "workbench.action.files.copyPathOfActiveFile",
+        "when": "editorTextFocus && !editorHasSelection"
+    },
+
+    // copy path of file in explorer.
+    {
+        "key": "ctrl+x ctrl+c",
+        "command": "copyFilePath",
+        "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus && !editorHasSelection"
+    },
+
+    // view active file in explorer.
+    {
+        "key": "ctrl+x ctrl+e",
+        "command": "workbench.action.files.revealActiveFileInWindows",
+        "when": "editorTextFocus && !editorHasSelection"
+    },
+
+    // --------------------------------------------------------------
+    // End File Management Keybinds.
+    // --------------------------------------------------------------
+
+    // --------------------------------------------------------------
+    // Begin Display Keybinds.
+    // --------------------------------------------------------------
+
+    // show explorer.
+    {
+        "key": "ctrl+1",
+        "command": "workbench.view.explorer",
+    },
+    
+    // show search.
+    {
+        "key": "ctrl+2",
+        "command": "workbench.view.search",
+    },
+
+    // show source control.
+    {
+        "key": "ctrl+3",
+        "command": "workbench.view.scm",
+    },
+
+    // show debug.
+    {
+        "key": "ctrl+4",
+        "command": "workbench.view.debug",
+    },
+
+    // show extensions.
+    {
+        "key": "ctrl+5",
+        "command": "workbench.view.extensions",
+    },
+
+    // open find and replace.
+    {
+        "key": "ctrl+shift+f",
+        "command": "workbench.action.replaceInFiles",
+        "when": "!editorFocus"
+    },
+
+    // close find and replace.
+    {
+        "key": "escape",
+        "command": "closeReplaceInFilesWidget",
+        "when": "searchViewletVisible"
+    },
+
+    // replace current selection.
+    {
+        "key": "ctrl+enter",
+        "command": "editor.action.replaceOne",
+        "when": "matchFocus && replaceActive && searchViewletVisible"
+    },
+
+    // replace all.
+    {
+        "key": "ctrl+shift+enter",
+        "command": "editor.action.replaceAll",
+        "when": "matchFocus && replaceActive && searchViewletVisible"
+    },
+
+    // toggle whole word.
+    {
+        "key": "alt+q",
+        "command": "toggleSearchCaseSensitive",
+        "when": "searchInputBoxFocus && searchViewletVisible"
+    },
+
+    // toggle case-sensitive.
+    {
+        "key": "alt+w",
+        "command": "toggleSearchWholeWord",
+        "when": "searchInputBoxFocus && searchViewletVisible"
+    },
+
+    // toggle regex (change to alt+e when fixed).
+    {
+        "key": "alt+r",
+        "command": "toggleSearchRegex",
+        "when": "searchInputBoxFocus && searchViewletVisible"
+    },
+    
+    // --------------------------------------------------------------
+    // End Display Keybinds.
+    // --------------------------------------------------------------
+
+    // --------------------------------------------------------------
+    // Begin Debug Keybinds.
+    // --------------------------------------------------------------
+
+    // stop debugger.
+    {
+        "key": "ctrl+f5",
+        "command": "workbench.action.debug.stop",
+        "when": "inDebugMode"
+    },
+    
+    // step over.
+    {
+        "key": "f6",
+        "command": "workbench.action.debug.stepOver",
+        "when": "inDebugMode"
+    },
+
+    // step into.
+    {
+        "key": "f7",
+        "command": "workbench.action.debug.stepInto",
+        "when": "inDebugMode"
+    },
+
+    // step out.
+    {
+        "key": "ctrl+f7",
+        "command": "workbench.action.debug.stepOut",
+        "when": "inDebugMode"
+    },
+
+    // show hover tooltip.
+    {
+        "key": "ctrl+y",
+        "command": "editor.action.showHover",
+        "when": "editorTextFocus"
+    },
+    
+    // --------------------------------------------------------------
+    // End Debug Keybinds.
+    // --------------------------------------------------------------
+
+    // --------------------------------------------------------------
+    // Begin Saving Keybinds.
+    // --------------------------------------------------------------
+
+    // save all files.
+    {
+        "key": "ctrl+x ctrl+s",
+        "command": "workbench.action.files.saveAll",
+        "when": "!editorHasSelection"
+    },
+
+    // save file as.
+    {
+        "key": "ctrl+shift+s",
+        "command": "workbench.action.files.saveAs",
+    },
+
+    // --------------------------------------------------------------
+    // End Saving Keybinds.
+    // --------------------------------------------------------------
+    
+    // --------------------------------------------------------------
+    // Begin Window Navigation Keybinds.
+    // --------------------------------------------------------------
+
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.nextEditor"
+    },
+
+    {
+        "key": "ctrl+q",
+        "command": "workbench.action.closePanel"
+    },
+
+    // --------------------------------------------------------------
+    // End Window Navigation Keybinds.
+    // --------------------------------------------------------------
+
+    // --------------------------------------------------------------
+    // Begin Integrated Terminal Keybinds.
+    // --------------------------------------------------------------
+
+    // focus terminal.
+    {
+        "key": "ctrl+x f1",
+        "command": "workbench.action.terminal.focus",
+        "when": "!editorHasSelection"
+    },
+
+    // open integrated terminal.
+    {
+        "key": "f1",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+
+    // create new integrated terminal.
+    {
+        "key": "shift+f1",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus"
+    },
+
+    // cycle through integrated terminals.
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+
+    // kills current terminal.
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
+
+    // select all in integrated terminal.
+    {
+        "key": "ctrl+a",
+        "command": "workbench.action.terminal.selectAll",
+        "when": "terminalFocus"
+    },
+
+    // scroll up one line in integrated terminal.
+    {
+        "key": "alt+i",
+        "command": "workbench.action.terminal.scrollUp",
+        "when": "terminalFocus"
+    },
+
+    // scroll down one line in integrated terminal.
+    {
+        "key": "alt+k",
+        "command": "workbench.action.terminal.scrollDown",
+        "when": "terminalFocus"
+    },
+
+    // scroll up one page in integrated terminal.
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.terminal.scrollUpPage",
+        "when": "terminalFocus"
+    },
+
+    // scroll down one page in integrated terminal.
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.terminal.scrollDownPage",
+        "when": "terminalFocus"
+    },
+
+    // goto top in integrated terminal.
+    {
+        "key": "ctrl+u",
+        "command": "workbench.action.terminal.scrollToTop",
+        "when": "terminalFocus"
+    },
+
+    // goto bottom in integrated terminal.
+    {
+        "key": "ctrl+o",
+        "command": "workbench.action.terminal.scrollToBottom",
+        "when": "terminalFocus"
+    },
+
+    // --------------------------------------------------------------
+    // End Integrated Terminal Keybinds.
+    // --------------------------------------------------------------
+
+    // --------------------------------------------------------------
+    // Begin Unbound Keybinds.
+    // --------------------------------------------------------------
+
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.closeWindow",
+        "when": "!editorIsOpen"
+    },
+
+    // --------------------------------------------------------------
+    // End Unbound Keybinds.
+    // --------------------------------------------------------------
+]
