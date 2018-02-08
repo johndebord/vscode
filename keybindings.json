@@ -467,6 +467,27 @@
         "command": "workbench.action.splitEditor",
         "when": "!editorHasSelection"
     },
+
+    // launch web server.
+    {
+        "key": "ctrl+x =",
+        "command": "extension.launch",
+        "when": "editorTextFocus && !editorHasSelection"
+    },
+
+    // stop web server.
+    {
+        "key": "ctrl+x -",
+        "command": "extension.stop",
+        "when": "editorTextFocus && !editorHasSelection"
+    },
+
+    // resume web server.
+    {
+        "key": "ctrl+x ctrl+-",
+        "command": "extension.resume",
+        "when": "editorTextFocus && !editorHasSelection"
+    },
     
     // --------------------------------------------------------------
     // End Editor Management Keybinds.
@@ -476,6 +497,20 @@
     // Begin File Mangement Keybinds.
     // --------------------------------------------------------------
 
+    // open new file in explorer.
+    {
+        "key": "ctrl+shift+a",
+        "command": "explorer.newFile",
+        "when": "editorTextFocus"
+    },
+
+    // open new folder in explorer.
+    {
+        "key": "ctrl+x ctrl+shift+a",
+        "command": "explorer.newFolder",
+        "when": "editorTextFocus && !editorHasSelection"
+    },
+
     // open file.
     {
         "key": "ctrl+e",
@@ -484,7 +519,7 @@
 
     // open folder.
     {
-        "key": "ctrl+x e",
+        "key": "ctrl+shift+e",
         "command": "workbench.action.files.openFolder",
         "when": "!editorHasSelection"
     },
