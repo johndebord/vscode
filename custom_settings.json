@@ -1,0 +1,52 @@
+{
+    // make empty file on startup.
+    "workbench.startupEditor": "newUntitledFile",
+
+    // do not save last session on startup.
+    "window.restoreWindows": "none",
+
+    // minimalist icon theme.
+    "workbench.iconTheme": "vs-minimal",
+
+    // enable word-wrap.
+    "editor.wordWrap": "on",
+
+    // make cursor block style.
+    "editor.cursorStyle": "block",
+
+    // make cursor not blink.
+    "editor.cursorBlinking": "solid",
+
+    // set default zoom level.
+    "window.zoomLevel": 0,
+
+    // always show the slider on the mini-map.
+    "editor.minimap.showSlider": "always",
+
+    // render color patterns instead of text on the mini-map.
+    "editor.minimap.renderCharacters": false,
+
+    // prevent copying an empty line.
+    "editor.emptySelectionClipboard": false,
+
+    // make sidebar default to left side.
+    "workbench.sideBar.location": "left",
+
+    // hide sidebar.
+    "workbench.activityBar.visible": false,
+
+    // show bottom status bar.
+    "workbench.statusBar.visible": true,
+
+    // quick editor suggestions.
+    "editor.quickSuggestionsDelay": 0,
+
+    // disable watermark tips on empty editor.
+    "workbench.tips.enabled": false,
+
+    // might need this later.
+    // "editor.tabCompletion": false,
+
+    // customize window title.
+    // "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName}",
+}
